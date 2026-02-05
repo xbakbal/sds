@@ -199,7 +199,7 @@ entity TempCodes : cuid, managed {
 
 | Profil | Environment | Credentials |
 |--------|-------------|-------------|
-| **Default** | Production (Cloud) | AWS RDS PostgreSQL (host: `postgres-46addd8e-7800-4734-9acc-8ac9b646c79d.ce4jcviyvogb.eu-central-1.rds.amazonaws.com`) |
+| **Default** | Production (Cloud) | PostgreSQL on BTP (host: `postgres-46addd8e-7800-4734-9acc-8ac9b646c79d.ce4jcviyvogb.eu-central-1.rds.amazonaws.com`) |
 | **sqlite** | Local Development | SQLite (`db.sqlite`) |
 | **pglocal** | Local PostgreSQL | localhost:5432, schema: `yasar` |
 
