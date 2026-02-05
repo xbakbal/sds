@@ -396,17 +396,6 @@ resources:
 }
 ```
 
-### Routing Kuralları (app/xs-app.json)
-
-```json
-"authenticationMethod": "none"  // ⚠️ Public erişim - Kimlik doğrulama YOK
-```
-
-**Güvenlik İyileştirmesi İçin:**
-- XSUAA ile authentication aktif edilmeli
-- Role-based access eklenebilir
-- Rate limiting uygulanmalı
-
 ---
 
 ## 🐛 Bilinen Sorunlar ve Çözümler
