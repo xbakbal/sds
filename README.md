@@ -212,8 +212,7 @@ entity TempCodes : cuid, managed {
 **Endpoint:** `https://ac9jfwmoq.accounts.ondemand.com/scim`
 
 **Authentication:** Basic Authentication
-- Kodda hardcoded: `Authorization: Basic WEJBS0JBTDptNERwdDNYVzczd3N5dTg=`
-- **⚠️ GÜVENLİK NOTU:** Credentials environment variable'a taşınmalı!
+- Kodda hardcoded: `Authorization: Basic <AUTH_KEY>`
 
 **API Operations:**
 - `GET /scim/Users?filter=userName eq "..."` - Kullanıcı arama
@@ -235,7 +234,6 @@ entity TempCodes : cuid, managed {
 **Service Plan:** `application`
 - Tenant Mode: `dedicated`
 - App Name: `sf-pw-reset-xsuaa`
-- **⚠️ NOT:** `xs-security.json` boş (public erişim için `authenticationMethod: "none"`)
 
 ---
 
@@ -334,7 +332,7 @@ mbt build
 
 ```bash
 # BTP'ye login
-cf login -a https://api.cf.eu10.hana.ondemand.com
+cf login -a <BTP LINK>
 
 # Org ve space seç
 cf target -o <ORG_NAME> -s <SPACE_NAME>
