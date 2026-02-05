@@ -331,8 +331,8 @@ mbt build
 #### 2. Cloud Foundry'ye Deploy
 
 ```bash
-# BTP'ye login
-cf login -a <BTP LINK>
+# BTP'ye login - https://api.cf.eu10-004.hana.ondemand.com
+cf login -a <BTP API ENDPOINT> 
 
 # Org ve space seç
 cf target -o <ORG_NAME> -s <SPACE_NAME>
